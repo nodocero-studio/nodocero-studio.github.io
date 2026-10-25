@@ -1,0 +1,39 @@
+{
+  "videos": [
+    {
+      "id": "Zj_bkyyoI5k",
+      "title": "Emin Nilsen — VIDA NOVA",
+      "subtitle": "Brazilian Phonk · Official Audio",
+      "published": "2026-10-25",
+      "type": "original"
+    },
+    {
+      "id": "0uOsbezhJMs",
+      "title": "Sub Clair",
+      "subtitle": "Nodo Cero · TeamRex · TeamFoxi",
+      "published": "2026-10-15",
+      "type": "collab"
+    },
+    {
+      "id": "TmPzEmEXcQ4",
+      "title": "Warriyo — Mortals",
+      "subtitle": "Tokyo Machine & Boom Kitty Remix",
+      "published": "2026-10-09",
+      "type": "remix"
+    },
+    {
+      "id": "LnnqF8VPH0I",
+      "title": "LXNGVX & Maestro Chives — Royalty Funk",
+      "subtitle": "Versión original",
+      "published": "2026-10-05",
+      "type": "original"
+    },
+    {
+      "id": "DtMIirJWL60",
+      "title": "COM BOTA",
+      "subtitle": "Cape & Crysstales · Versión original",
+      "published": "2026-10-04",
+      "type": "original"
+    }
+  ]
+}
