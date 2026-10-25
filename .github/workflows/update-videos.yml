@@ -1,0 +1,28 @@
+name: Actualizar vídeos de YouTube
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # cada 6 horas
+  workflow_dispatch:          # también se puede lanzar a mano
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm install @extractus/feed-extractor
+
+      - run: node scripts/update-videos.js
+
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add videos.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: actualizar videos.json"
+          git push
